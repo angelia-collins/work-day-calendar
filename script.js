@@ -20,6 +20,20 @@ function renderNineAM() {
 }
 renderNineAM();
 
+function changeColorsNineAM() {
+    var hour = moment().hour();
+    console.log(hour);
+    if (hour > 9) {
+        $("#areaNine").removeClass("future");
+        $("#areaNine").addClass("past");
+    }
+    if (hour === 9) {
+        $("#areaNine").removeClass("future");
+        $("#areaNine").addClass("present");
+    }
+}
+changeColorsNineAM();
+
 $("#btnNine").on("click", function (event) {
     event.preventDefault();
     storeInputNineAM();
@@ -40,6 +54,20 @@ function renderTenAM() {
     $("#areaTen").text(savedInput);
 }
 renderTenAM();
+
+function changeColorsTenAM() {
+    var hour = moment().hour();
+    console.log(hour);
+    if (hour > 10) {
+        $("#areaTen").removeClass("future");
+        $("#areaTen").addClass("past");
+    }
+    if (hour === 10) {
+        $("#areaTen").removeClass("future");
+        $("#areaTen").addClass("present");
+    }
+}
+changeColorsTenAM();
 
 $("#btnTen").on("click", function (event) {
     event.preventDefault();
@@ -62,6 +90,20 @@ function renderElevenAM() {
 }
 renderElevenAM();
 
+function changeColorsElevenAM() {
+    var hour = moment().hour();
+    console.log(hour);
+    if (hour > 11) {
+        $("#areaEleven").removeClass("future");
+        $("#areaEleven").addClass("past");
+    }
+    if (hour === 11) {
+        $("#areaEleven").removeClass("future");
+        $("#areaEleven").addClass("present");
+    }
+}
+changeColorsElevenAM();
+
 $("#btnEleven").on("click", function (event) {
     event.preventDefault();
     storeInputElevenAM();
@@ -82,6 +124,20 @@ function renderTwelveAM() {
     $("#areaTwelve").text(savedInput);
 }
 renderTwelveAM();
+
+function changeColorsTwelveAM() {
+    var hour = moment().hour();
+    console.log(hour);
+    if (hour > 12) {
+        $("#areaTwelve").removeClass("future");
+        $("#areaTwelve").addClass("past");
+    }
+    if (hour === 12) {
+        $("#areaTwelve").removeClass("future");
+        $("#areaTwelve").addClass("present");
+    }
+}
+changeColorsTwelveAM();
 
 $("#btnTwelve").on("click", function (event) {
     event.preventDefault();
@@ -104,6 +160,19 @@ function renderOnePM() {
 }
 renderOnePM();
 
+function changeColorsOnePM() {
+    var hour = moment().hour();
+    if (hour > 13) {
+        $("#areaOne").removeClass("future");
+        $("#areaOne").addClass("past");
+    }
+    if (hour === 13) {
+        $("#areaOne").removeClass("future");
+        $("#areaOne").addClass("present");
+    }
+}
+changeColorsOnePM();
+
 $("#btnthefirst").on("click", function (event) {
     event.preventDefault();
     storeInputOnePM();
@@ -124,6 +193,19 @@ function renderTwoPM() {
     $("#areaTwo").text(savedInput);
 }
 renderTwoPM();
+
+function changeColorsTwoPM() {
+    var hour = moment().hour();
+    if (hour > 14) {
+        $("#areaTwo").removeClass("future");
+        $("#areaTwo").addClass("past");
+    }
+    if (hour === 14) {
+        $("#areaTwo").removeClass("future");
+        $("#areaTwo").addClass("present");
+    }
+}
+changeColorsTwoPM();
 
 $("#btnTwo").on("click", function (event) {
     event.preventDefault();
@@ -146,6 +228,19 @@ function renderThreePM() {
 }
 renderThreePM();
 
+function changeColorsThreePM() {
+    var hour = moment().hour();
+    if (hour > 15) {
+        $("#areaThree").removeClass("future");
+        $("#areaThree").addClass("past");
+    }
+    if (hour === 15) {
+        $("#areaThree").removeClass("future");
+        $("#areaThree").addClass("present");
+    }
+}
+changeColorsThreePM();
+
 $("#btnThree").on("click", function (event) {
     event.preventDefault();
     storeInputThreePM();
@@ -167,6 +262,19 @@ function renderFourPM() {
 }
 renderFourPM();
 
+function changeColorsFourPM() {
+    var hour = moment().hour();
+    if (hour > 16) {
+        $("#areaFour").removeClass("future");
+        $("#areaFour").addClass("past");
+    }
+    if (hour === 16) {
+        $("#areaFour").removeClass("future");
+        $("#areaFour").addClass("present");
+    }
+}
+changeColorsFourPM();
+
 $("#btnFour").on("click", function (event) {
     event.preventDefault();
     storeInputFourPM();
@@ -187,6 +295,19 @@ function renderFivePM() {
     $("#areaFive").text(savedInput);
 }
 renderFivePM();
+
+function changeColorsFivePM() {
+    var hour = moment().hour();
+    if (hour > 17) {
+        $("#areaFive").removeClass("future");
+        $("#areaFive").addClass("past");
+    }
+    if (hour === 17) {
+        $("#areaFive").removeClass("future");
+        $("#areaFive").addClass("present");
+    }
+}
+changeColorsFivePM();
 
 $("#btnFive").on("click", function (event) {
     event.preventDefault();
